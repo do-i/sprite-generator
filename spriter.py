@@ -85,12 +85,38 @@ for item in items.values():
 
 metadata_dict = type_to_objects
 
+# Step 3: Extract all unique requirements to a Set
+all_requirements = set()
+
+for items in metadata_dict.values():
+    for item in items:
+        # Update the set with everything in the 'required' list
+        all_requirements.update(item.get('required', []))
+
 # Execute
 # print_dependency_graph(metadata_dict)
 
 # Execute the check
 # log_standalone_items(metadata_dict)
 
-# Verify
+# Step 4: Link items to their base_frame parents
+for t_name, items in metadata_dict.items():
+    for item in items:
+        name = item.get('name')
+        reqs = item.get('required', [])
 
-print(f"Initialized base_frames: {quick_dict}")
+        # Create the leaf node for the item
+        item_node = Node(t_name, name)
+
+        # Attach this item to every base_frame it requires
+        for req in reqs:
+            if req in quick_dict:
+                quick_dict[req].nodes.append(item_node)
+
+# Verify: Check how many items are attached to 'male'
+print(f"Items compatible with 'male': {len(quick_dict['male'].nodes)}")
+print(f"Items compatible with 'female': {len(quick_dict['female'].nodes)}")
+print(f"Items compatible with 'child': {len(quick_dict['child'].nodes)}")
+print(f"Items compatible with 'pregnant': {len(quick_dict['pregnant'].nodes)}")
+print(f"Items compatible with 'teen': {len(quick_dict['teen'].nodes)}")
+print(f"Items compatible with 'muscular': {len(quick_dict['muscular'].nodes)}")

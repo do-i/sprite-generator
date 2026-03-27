@@ -1,0 +1,660 @@
+type_name,name,classification
+accessory,Centurion Crest,Universal
+accessory,Centurion Plumage,Universal
+accessory,Crest,Universal
+accessory,Downward Horns,Non-Humanoid
+accessory,Helmet wings,Non-Humanoid
+accessory,Legion Plumage,Universal
+accessory,Plumage,Universal
+accessory,Short Horns,Non-Humanoid
+accessory,Upward Horns,Non-Humanoid
+ammo,Ammo,Universal
+apron,Apron,Humanoid
+apron,Apron full,Humanoid
+apron,Apron half,Humanoid
+apron,Overskirt,Humanoid
+armour,Leather,Universal
+armour,Legion,Universal
+armour,Plate,Universal
+arms,Armour,Universal
+backpack,Backpack,Universal
+backpack,Basket,Universal
+backpack,Jetpack,Universal
+backpack,Square pack,Universal
+backpack_straps,Straps,Universal
+bandages,Bandages,Universal
+bandana,Bandana,Universal
+bandana,Bordered Bandana,Universal
+bandana,Mail,Universal
+bandana,Pirate Bandana,Universal
+bandana_overlay,Skull Bandana Overlay,Non-Humanoid
+bauldron,Bauldron,Universal
+beard,5 O'clock Shadow,Universal
+beard,Basic Beard,Universal
+beard,Medium Beard,Universal
+beard,Trimmed Beard,Universal
+beard,Winter Beard,Universal
+belt,Belly belt,Humanoid
+belt,Double Belt,Humanoid
+belt,Formal Belt,Humanoid
+belt,Leather Belt,Humanoid
+belt,Leather Belt Alt,Humanoid
+belt,Loose Belt,Humanoid
+belt,Mage Belt,Humanoid
+belt,Robe Belt,Humanoid
+body,Body Color,Universal
+body,Skeleton,Non-Humanoid
+body,Zombie,Non-Humanoid
+bracers,Bracers,Universal
+buckles,Buckles,Universal
+cape,Solid,Universal
+cape,Tattered,Universal
+cape_trim,Cape Trim,Universal
+cargo,Jetpack fins,Universal
+cargo,Ore,Universal
+cargo,Wood,Universal
+chainmail,Chainmail,Universal
+charm,Box Charm,Universal
+charm,Cross amulet,Universal
+charm,Dangling amulet,Universal
+charm,Emerald cut Gem,Universal
+charm,Marquise cut Gem,Universal
+charm,Natural cut Gem,Universal
+charm,Oval Charm,Universal
+charm,Pear cut Gem,Universal
+charm,Pearl Gem,Universal
+charm,Princess cut Gem,Universal
+charm,Ring Charm,Universal
+charm,Round cut Gem,Universal
+charm,Spider amulet,Universal
+charm,Star Charm,Universal
+charm,Star amulet,Universal
+charm,Trilliant cut Gem,Universal
+clothes,Blouse,Humanoid
+clothes,Cardigan,Humanoid
+clothes,Child shirts,Humanoid
+clothes,Collared/Formal Longsleeve,Humanoid
+clothes,Longsleeve,Humanoid
+clothes,Longsleeve 2,Humanoid
+clothes,Longsleeve 2 Buttoned,Humanoid
+clothes,Longsleeve 2 Scoop,Humanoid
+clothes,Longsleeve 2 VNeck,Humanoid
+clothes,Longsleeve Polo,Humanoid
+clothes,Longsleeve blouse,Humanoid
+clothes,Longsleeve laced,Humanoid
+clothes,Original Sleeveless,Humanoid
+clothes,Robe,Humanoid
+clothes,Sara Tunic,Humanoid
+clothes,Scoop,Humanoid
+clothes,Shortsleeve,Humanoid
+clothes,Shortsleeve Cardigan,Humanoid
+clothes,Shortsleeve Polo,Humanoid
+clothes,Sleeveless,Humanoid
+clothes,Sleeveless 2,Humanoid
+clothes,Sleeveless 2 Buttoned,Humanoid
+clothes,Sleeveless 2 Cardigan,Humanoid
+clothes,Sleeveless 2 Polo,Humanoid
+clothes,Sleeveless 2 Scoop,Humanoid
+clothes,Sleeveless 2 VNeck,Humanoid
+clothes,Sleeveless laced,Humanoid
+clothes,Sleeveless striped,Humanoid
+clothes,Striped Collared/Formal Longsleeve,Humanoid
+clothes,TShirt,Humanoid
+clothes,TShirt Buttoned,Humanoid
+clothes,TShirt Scoop,Humanoid
+clothes,TShirt VNeck,Humanoid
+clothes,Tanktop,Humanoid
+clothes,Tunic,Humanoid
+dress,Kimono,Humanoid
+dress,Sash dress,Humanoid
+dress,Slit dress,Humanoid
+dress,Split Kimono,Humanoid
+dress_sleeves,Kimono Oversized Sleeves,Universal
+dress_sleeves,Kimono Sleeves,Universal
+dress_sleeves_trim,Kimono Oversized Sleeves Trim,Universal
+dress_sleeves_trim,Kimono Sleeves Trim,Universal
+dress_trim,Kimono Trim,Universal
+dress_trim,Split Kimono Trim,Universal
+earring_left,Simple Earring Left,Universal
+earring_right,Simple Earring Right,Universal
+earrings,Emerald earrings,Universal
+earrings,Moon earrings,Universal
+earrings,Pear earrings,Universal
+earrings,Princess earrings,Universal
+earrings,Stud earrings,Universal
+ears,Big ears,Universal
+ears,Downward Elven Ears,Universal
+ears,Dragon Ears,Universal
+ears,Elven ears,Universal
+ears,Feather Ears,Universal
+ears,Hanging Elven Ears,Universal
+ears,Long ears,Universal
+ears,Medium Elven Ears,Universal
+ears,Side Cat Ears,Universal
+ears,Side Wolf Ears,Non-Humanoid
+ears_inner,Feather Ears Skintone,Universal
+ears_inner,Side Cat Ears Skintone,Universal
+ears_inner,Side Wolf Ears Skintone,Non-Humanoid
+expression,Angry,Universal
+expression,Angry Alt,Universal
+expression,Blush,Universal
+expression,Closed Eyes,Universal
+expression,Closing Eyes,Universal
+expression,Happy,Universal
+expression,Happy Alt,Universal
+expression,Looking Left,Universal
+expression,Looking Right,Universal
+expression,Neutral,Universal
+expression,Rolling Eyes,Universal
+expression,Sad,Universal
+expression,Sad Alt,Universal
+expression,Shame,Universal
+expression,Shock,Universal
+expression_crying,Tears,Universal
+eye_color,Eye Color,Universal
+eyebrows,Thick Eyebrows,Universal
+eyebrows,Thin Eyebrows,Universal
+eyes,Child Eyes,Universal
+eyes,Cyclops Eyes,Universal
+facial_eyes,Eyepatch 2 Left,Universal
+facial_eyes,Eyepatch 2 Right,Universal
+facial_eyes,Eyepatch Ambidextrous,Universal
+facial_eyes,Eyepatch Left,Universal
+facial_eyes,Eyepatch Right,Universal
+facial_eyes,Glasses,Universal
+facial_eyes,Halfmoon Glasses,Universal
+facial_eyes,Nerd Glasses,Universal
+facial_eyes,Round Glasses,Universal
+facial_eyes,Secretary Glasses,Universal
+facial_eyes,Shades,Universal
+facial_eyes,Small Eyepatch Left,Universal
+facial_eyes,Small Eyepatch Right,Universal
+facial_eyes,Sunglasses,Universal
+facial_left,Left Monocle,Universal
+facial_left_trim,Left Monocle Frame Color,Universal
+facial_mask,Plain Mask,Universal
+facial_right,Right Monocle,Universal
+facial_right_trim,Right Monocle Frame Color,Universal
+fins,Fin,Universal
+fins,Short fin,Universal
+furry_ears,Cat Ears,Universal
+furry_ears,Wolf Ears,Non-Humanoid
+furry_ears_skin,Cat Ears Skintone,Universal
+furry_ears_skin,Wolf Ears Skintone,Non-Humanoid
+gloves,Gloves,Humanoid
+hair,Afro,Universal
+hair,Balding,Universal
+hair,Bangs,Universal
+hair,Bangs bun,Universal
+hair,Bangslong,Universal
+hair,Bangslong2,Universal
+hair,Bangsshort,Universal
+hair,Bedhead,Universal
+hair,Bob,Universal
+hair,Bob side part,Universal
+hair,Braid,Universal
+hair,Braid2,Universal
+hair,Bunches,Universal
+hair,Buzzcut,Universal
+hair,Child Wavy,Universal
+hair,Cornrows,Universal
+hair,Cowlick,Universal
+hair,Cowlick tall,Universal
+hair,Curly long,Universal
+hair,Curly short,Universal
+hair,Curly short 2,Universal
+hair,Curtains,Universal
+hair,Curtains long,Universal
+hair,Dreadlocks long,Universal
+hair,Dreadlocks short,Universal
+hair,Flat top fade,Universal
+hair,Flat top straight,Universal
+hair,Half up,Universal
+hair,Halfmessy,Universal
+hair,High and tight,Universal
+hair,High ponytail,Non-Humanoid
+hair,Idol,Universal
+hair,Jewfro,Universal
+hair,Large Curls,Universal
+hair,Large Curls XLong,Universal
+hair,Lob,Universal
+hair,Long,Universal
+hair,Long Topknot,Universal
+hair,Long Topknot 2,Universal
+hair,Long band,Universal
+hair,Long center part,Universal
+hair,Long messy,Universal
+hair,Long messy2,Universal
+hair,Long straight,Universal
+hair,Long tied,Universal
+hair,Longhawk,Universal
+hair,Loose,Universal
+hair,Messy,Universal
+hair,Messy1,Universal
+hair,Messy2,Universal
+hair,Messy3,Universal
+hair,Mop,Universal
+hair,Natural,Universal
+hair,Page,Universal
+hair,Page2,Universal
+hair,Parted,Universal
+hair,Parted 2,Universal
+hair,Parted 3,Universal
+hair,Pigtails,Non-Humanoid
+hair,Pigtails bangs,Non-Humanoid
+hair,Pixie,Universal
+hair,Plain,Universal
+hair,Ponytail,Non-Humanoid
+hair,Ponytail2,Non-Humanoid
+hair,Princess,Universal
+hair,Relm Short,Universal
+hair,Relm XLong,Universal
+hair,Relm w/Ponytail,Non-Humanoid
+hair,Sara,Universal
+hair,Short Topknot,Universal
+hair,Short Topknot 2,Universal
+hair,Shorthawk,Universal
+hair,Shoulderl,Universal
+hair,Shoulderr,Universal
+hair,Side Parted w/Bangs,Universal
+hair,Side Parted w/Bangs 2,Universal
+hair,Side Swoop,Universal
+hair,Single,Universal
+hair,Spiked,Universal
+hair,Spiked beehive,Universal
+hair,Spiked liberty,Universal
+hair,Spiked liberty2,Universal
+hair,Spiked porcupine,Non-Humanoid
+hair,Spiked2,Universal
+hair,Swoop,Universal
+hair,Twists fade,Universal
+hair,Twists straight,Universal
+hair,Unkempt,Universal
+hair,Wavy,Universal
+hair,XLong Wavy,Universal
+hair,Xlong,Universal
+hairextl,Left Braid,Universal
+hairextl,Left Long Straight,Universal
+hairextl,Left Long Wavy,Universal
+hairextl,Left XLong Bang,Universal
+hairextl,Left XLong Braid,Universal
+hairextl,Left XLong Curly,Universal
+hairextl,Left XLong Wavy,Universal
+hairextr,Right Braid,Universal
+hairextr,Right Long Straight,Universal
+hairextr,Right Long Wavy,Universal
+hairextr,Right XLong Bang,Universal
+hairextr,Right XLong Braid,Universal
+hairextr,Right XLong Curly,Universal
+hairextr,Right XLong Wavy,Universal
+hairtie,Hair Tie,Humanoid
+hairtie_rune,Hair Tie Rune,Humanoid
+hat,Armet,Universal
+hat,Barbarian,Universal
+hat,Barbarian Viking,Universal
+hat,Barbarian nasal,Universal
+hat,Barbuta,Universal
+hat,Bascinet,Universal
+hat,Bicorne Athwart,Universal
+hat,Bicorne Athwart Admiral,Universal
+hat,Bicorne Athwart Captain,Universal
+hat,Bicorne Athwart Commodore,Universal
+hat,Bicorne Foreaft Commodore,Universal
+hat,Bicorne foreaft,Universal
+hat,Bonnie,Universal
+hat,Bonnie Alt Tilt,Universal
+hat,Cavalier,Universal
+hat,Celestial Wizard Hat,Humanoid
+hat,Celestial Wizard Moon Hat,Humanoid
+hat,Christmas Hat,Humanoid
+hat,Close helm,Universal
+hat,Crown,Universal
+hat,Flattop,Universal
+hat,Formal Bowler Hat,Humanoid
+hat,Formal Tophat,Humanoid
+hat,Greathelm,Universal
+hat,Hijab,Universal
+hat,Hood,Universal
+hat,Horned helmet,Non-Humanoid
+hat,Kettle helm,Universal
+hat,Large Hat,Humanoid
+hat,Leather Cap,Universal
+hat,Legion,Universal
+hat,Maximus,Universal
+hat,Morion,Universal
+hat,Nasal helm,Universal
+hat,Norman helm,Universal
+hat,Pigface bascinet,Universal
+hat,Pigface bascinet raised,Universal
+hat,Pointed helm,Universal
+hat,Round bascinet,Universal
+hat,Sack Cloth Hood,Universal
+hat,Simple Armet,Universal
+hat,Simple barbuta,Universal
+hat,Simple sugarloaf helm,Universal
+hat,Spangenhelm,Universal
+hat,Sugarloaf greathelm,Universal
+hat,Tiara,Universal
+hat,Tricorne,Universal
+hat,Tricorne Captain,Universal
+hat,Tricorne Lieutenant,Universal
+hat,Viking spangenhelm,Universal
+hat,Wizard Hat Base,Humanoid
+hat,Xeon helmet,Humanoid
+hat_accessory,Bicorne Athwart Admiral Cockade,Universal
+hat_accessory,Bonnie feather,Universal
+hat_accessory,Cavalier feather,Universal
+hat_accessory,Leather Cap Feather,Universal
+hat_buckle,Wizard Hat Buckle,Humanoid
+hat_overlay,Bicorne Athwart Captain Skull,Non-Humanoid
+hat_overlay,Bicorne Athwart Skull,Non-Humanoid
+hat_overlay,Tricorne Captain Skull,Non-Humanoid
+hat_trim,Bicorne Athwart Admiral Trim,Universal
+hat_trim,Bicorne Athwart Commodore Trim,Universal
+hat_trim,Bicorne Foreaft Commodore Trim,Universal
+hat_trim,Bonnie Center Trim,Universal
+hat_trim,Celestial Wizard Hat Second Color,Humanoid
+hat_trim,Celestial Wizard Moon Hat Second Color,Humanoid
+hat_trim,Elf Trim,Universal
+hat_trim,Santa Trim,Universal
+hat_trim,Tricorne Captain Trim,Universal
+hat_trim,Tricorne Lieutenant Trim,Universal
+hat_trim,Tricorne Stitching,Universal
+hat_trim,Tricorne Thatching,Humanoid
+hat_trim,Wizard Hat Belt,Humanoid
+head,Alien,Universal
+head,Boarman,Universal
+head,Boarman child,Universal
+head,Frankenstein,Universal
+head,Goblin,Universal
+head,Goblin child,Universal
+head,Human Child,Universal
+head,Human Elderly Small,Universal
+head,Human Female,Universal
+head,Human Female Elderly,Universal
+head,Human Female Small,Universal
+head,Human Male,Universal
+head,Human Male Elderly,Universal
+head,Human Male Gaunt,Universal
+head,Human Male Plump,Universal
+head,Human Male Small,Universal
+head,Jack O Lantern,Universal
+head,Lizard child,Non-Humanoid
+head,Lizard female,Non-Humanoid
+head,Lizard male,Non-Humanoid
+head,Minotaur,Universal
+head,Minotaur child,Universal
+head,Minotaur female,Universal
+head,Mouse,Universal
+head,Mouse child,Universal
+head,Orc child,Non-Humanoid
+head,Orc female,Non-Humanoid
+head,Orc male,Non-Humanoid
+head,Pig,Universal
+head,Pig child,Universal
+head,Rabbit,Universal
+head,Rabbit child,Universal
+head,Rat,Universal
+head,Rat child,Universal
+head,Sheep,Universal
+head,Sheep child,Universal
+head,Skeleton,Non-Humanoid
+head,Troll,Universal
+head,Troll child,Universal
+head,Vampire,Universal
+head,Wartotaur,Universal
+head,Wolf child,Non-Humanoid
+head,Wolf female,Non-Humanoid
+head,Wolf male,Non-Humanoid
+head,Zombie,Non-Humanoid
+headcover,Kerchief,Universal
+headcover,Thick Headband,Universal
+headcover,Tied Headband,Universal
+headcover_rune,Thick Headband Rune,Universal
+horns,Backwards Horns,Non-Humanoid
+horns,Curled Horns,Non-Humanoid
+jacket,Collared coat,Humanoid
+jacket,Frock coat,Humanoid
+jacket,Iverness cloak,Humanoid
+jacket,Santa coat,Humanoid
+jacket,Tabard,Universal
+jacket,Trench coat,Humanoid
+jacket_collar,Frock collar,Universal
+jacket_pockets,Jacket pockets,Humanoid
+jacket_trim,Frock coat buttons,Humanoid
+jacket_trim,Frock coat lace,Humanoid
+jacket_trim,Frock coat lapel,Humanoid
+legs,Armour,Universal
+legs,Belle skirt,Humanoid
+legs,Child pants,Humanoid
+legs,Child skirts,Humanoid
+legs,Cuffed Pants,Humanoid
+legs,Formal Pants,Humanoid
+legs,Fur Pants,Humanoid
+legs,Hose,Universal
+legs,Leggings,Universal
+legs,Leggings 2,Universal
+legs,Legion skirt,Humanoid
+legs,Long Pants,Humanoid
+legs,Pantaloons,Universal
+legs,Pants,Humanoid
+legs,Plain skirt,Humanoid
+legs,Pregnancy pants,Humanoid
+legs,Short Shorts,Universal
+legs,Shorts,Universal
+legs,Slit skirt,Humanoid
+legs,Straight skirt,Humanoid
+legs,Striped Formal Pants,Humanoid
+legs,Wide pants,Humanoid
+mustache,Big Mustache,Universal
+mustache,Chevron Mustache,Universal
+mustache,French Mustache,Universal
+mustache,Handlebar Mustache,Universal
+mustache,Horseshoe Mustache,Universal
+mustache,Lampshade Mustache,Universal
+mustache,Mustache,Universal
+mustache,Walrus Mustache,Universal
+neck,Bowtie,Universal
+neck,Bowtie 2,Universal
+neck,Capeclip,Universal
+neck,Capetie,Universal
+neck,Cravat,Universal
+neck,Jabot,Universal
+neck,Necktie,Universal
+neck,Scarf,Universal
+necklace,Chain Necklace,Universal
+necklace,Large Beaded Necklace,Universal
+necklace,Necklace,Universal
+necklace,Simple Necklace,Universal
+necklace,Small Beaded Necklace,Universal
+nose,Big nose,Universal
+nose,Button nose,Universal
+nose,Elderly nose,Universal
+nose,Large nose,Universal
+nose,Straight nose,Universal
+overalls,Overalls,Universal
+overalls,Suspenders,Universal
+ponytail,Long Topknot,Universal
+ponytail,Relm Topknot,Universal
+ponytail,Short Topknot,Universal
+prosthesis_hand,Hook hand,Universal
+prosthesis_leg,Peg leg,Universal
+quiver,Quiver,Universal
+ring,Stud Ring,Universal
+sash,Narrow sash,Humanoid
+sash,Obi,Universal
+sash,Sash,Humanoid
+sash,Waistband,Universal
+sash_tie,Obi Knot Left,Universal
+sash_tie,Obi Knot Right,Universal
+shadow,Shadow,Universal
+shield,Crusader shield,Universal
+shield,Heater Shield Base,Universal
+shield,Kite,Universal
+shield,Plus shield,Universal
+shield,Revised Heater Shield Base,Universal
+shield,Round Shield,Universal
+shield,Scutum shield,Universal
+shield,Spartan Shield,Universal
+shield,Two engrailed shield,Universal
+shield_paint,Heater Shield Paint,Universal
+shield_paint,Revised Heater Shield Paint,Universal
+shield_pattern,Heater shield pattern,Universal
+shield_pattern,barry,Universal
+shield_pattern,bend,Universal
+shield_pattern,bend_sinister,Universal
+shield_pattern,bendy,Universal
+shield_pattern,bendy_sinister,Universal
+shield_pattern,bordure,Universal
+shield_pattern,chevron,Universal
+shield_pattern,chevron_inverted,Universal
+shield_pattern,chief,Universal
+shield_pattern,cross,Universal
+shield_pattern,fess,Universal
+shield_pattern,lozengy,Universal
+shield_pattern,pale,Universal
+shield_pattern,pall,Universal
+shield_pattern,paly,Universal
+shield_pattern,per_bend,Universal
+shield_pattern,per_bend_sinister,Universal
+shield_pattern,per_chevron,Universal
+shield_pattern,per_chevron_inverted,Universal
+shield_pattern,per_fess,Universal
+shield_pattern,per_pale,Universal
+shield_pattern,per_saltire,Universal
+shield_pattern,quarterly,Universal
+shield_pattern,revised_barry,Universal
+shield_pattern,revised_bend,Universal
+shield_pattern,revised_bend_sinister,Universal
+shield_pattern,revised_bendy,Universal
+shield_pattern,revised_bendy_sinister,Universal
+shield_pattern,revised_bordure,Universal
+shield_pattern,revised_chevron,Universal
+shield_pattern,revised_chevron_inverted,Universal
+shield_pattern,revised_chief,Universal
+shield_pattern,revised_cross,Universal
+shield_pattern,revised_fess,Universal
+shield_pattern,revised_lozengy,Universal
+shield_pattern,revised_pale,Universal
+shield_pattern,revised_pall,Universal
+shield_pattern,revised_paly,Universal
+shield_pattern,revised_per_bend,Universal
+shield_pattern,revised_per_bend_sinister,Universal
+shield_pattern,revised_per_chevron,Universal
+shield_pattern,revised_per_chevron_inverted,Universal
+shield_pattern,revised_per_fess,Universal
+shield_pattern,revised_per_pale,Universal
+shield_pattern,revised_per_saltire,Universal
+shield_pattern,revised_quarterly,Universal
+shield_pattern,revised_saltire,Universal
+shield_pattern,saltire,Universal
+shield_trim,Heater Shield Trim,Universal
+shield_trim,Revised Heater Shield Trim,Universal
+shield_trim,Scutum shield trim,Universal
+shield_trim,Two engrailed shield trim,Universal
+shoes,Armour,Universal
+shoes,Basic Boots,Humanoid
+shoes,Basic Shoes,Humanoid
+shoes,Folded Rim Boots,Humanoid
+shoes,Ghillies,Universal
+shoes,Hoofs,Universal
+shoes,Revised Boots,Humanoid
+shoes,Revised Shoes,Humanoid
+shoes,Rimmed Boots,Humanoid
+shoes,Sandals,Universal
+shoes,Sara Shoes,Humanoid
+shoes,Slippers,Universal
+shoes_toe,Plated Toe,Universal
+shoes_toe,Thick Plated Toe,Universal
+shoulders,Epaulets,Universal
+shoulders,Leather,Universal
+shoulders,Legion,Universal
+shoulders,Mantal,Universal
+shoulders,Plate,Universal
+sleeves,Cuffed Longsleeves Overlay,Universal
+sleeves,Longsleeves 2 Overlay,Universal
+sleeves,Original Longsleeves Overlay,Universal
+sleeves,Original Shortsleeves Overlay,Universal
+sleeves,Shortsleeves 2 Overlay,Universal
+socks,Ankle Socks,Universal
+socks,High Socks,Universal
+socks,Tabi Socks,Universal
+tail,Cat Tail,Non-Humanoid
+tail,Fluffy Wolf Tail,Non-Humanoid
+tail,Lizard Tail (Alt Colors),Non-Humanoid
+tail,Lizard tail,Non-Humanoid
+tail,Wolf Tail,Non-Humanoid
+updo,High Bun,Universal
+vest,Bodice,Universal
+vest,Corset,Universal
+vest,Vest,Universal
+vest,Vest open,Universal
+visor,Grated visor,Universal
+visor,Horned visor,Non-Humanoid
+visor,Narrow grated visor,Universal
+visor,Narrow slit visor,Universal
+visor,Pigface visor,Universal
+visor,Pigface visor raised,Universal
+visor,Round visor,Universal
+visor,Round visor raised,Universal
+visor,Slit visor,Universal
+weapon,Arming Sword,Universal
+weapon,Boomerang,Universal
+weapon,Cane,Universal
+weapon,Club,Universal
+weapon,Crossbow,Universal
+weapon,Dagger,Universal
+weapon,Diamond staff,Universal
+weapon,Dragon spear,Universal
+weapon,Flail,Universal
+weapon,Glowsword,Universal
+weapon,Gnarled staff,Universal
+weapon,Great,Universal
+weapon,Halberd,Universal
+weapon,Katana,Universal
+weapon,Long spear,Universal
+weapon,Longsword,Universal
+weapon,Longsword alt,Universal
+weapon,Loop staff,Universal
+weapon,Mace,Universal
+weapon,Normal,Universal
+weapon,Rapier,Universal
+weapon,Recurve,Universal
+weapon,Rod,Universal
+weapon,S staff,Universal
+weapon,Saber,Universal
+weapon,Scimitar,Universal
+weapon,Scythe,Universal
+weapon,Simple staff,Universal
+weapon,Slingshot,Universal
+weapon,Smash,Universal
+weapon,Spear,Universal
+weapon,Thrust,Universal
+weapon,Trident,Universal
+weapon,Wand,Universal
+weapon,Waraxe,Universal
+weapon,Whip,Universal
+weapon_magic_crystal,Crystal,Universal
+wheelchair,Wheelchair,Humanoid
+wings,Bat Wings,Non-Humanoid
+wings,Batlike Lizard Wings,Non-Humanoid
+wings,Dragonfly Wings,Non-Humanoid
+wings,Feathered Wings,Non-Humanoid
+wings,Lizard Wings,Non-Humanoid
+wings,Lizard Wings (Alt Colors),Non-Humanoid
+wings,Lunar Wings,Non-Humanoid
+wings,Monarch Wings,Non-Humanoid
+wings,Pixie Wings,Non-Humanoid
+wings,Transparent Dragonfly Wings,Non-Humanoid
+wings,Transparent Pixie Wings,Non-Humanoid
+wings_dots,Monarch Wings Dots,Non-Humanoid
+wings_edge,Monarch Wings Edge,Non-Humanoid
+wound_arm,Arm,Universal
+wound_brain,Brain,Universal
+wound_eye_left,Left Eye,Universal
+wound_eye_right,Right Eye,Universal
+wound_mouth,Mouth,Universal
+wound_ribs,Ribs,Universal
+wrinkes,Wrinkles,Universal
+wrists,Cuffs,Universal
+wrists,Lace Cuffs,Universal
