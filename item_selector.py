@@ -2,16 +2,29 @@ import random
 import pandas as pd
 import json
 
+SPRITE_GEN_URL = "http://localhost:8000"
+# SPRITE_GEN_URL = "https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/"
+
 # 1. Update Node Model to include classification
 class Node:
-    def __init__(self, type_name, name, classification="Universal"):
+    def __init__(self, type_name, name, classification="Universal", variant=''):
         self.type_name = type_name
         self.name = name
         self.classification = classification
+        self.variant = variant
         self.nodes = []
 
     def __repr__(self):
-        return f"[{self.classification}] {self.type_name}: {self.name}"
+        return {
+            'type_name': self.type_name,
+            'name': self.resolved_name,
+            'variant': self.variant
+          }
+
+    def url_param_format(self):
+        resolved_name = self.name.replace(' ', '_')
+        return f"{self.type_name}={resolved_name}_{self.variant}"
+
 
 
 def load_metadata_to_dict():
@@ -82,6 +95,13 @@ def generate_sprite(base_frame, mode="Humanoid"):
     return selected_items
 
 
+def create_url(base_frame, items):
+    url_param = [item.url_param_format() for item in items]
+    url_params = "&".join(url_param)
+
+    return SPRITE_GEN_URL + '#sex=' + base_frame.name + '&' + url_params
+
+
 class_df = pd.read_csv('classified_items.csv')
 class_map = {(row['type_name'], row['name']): row['classification'] for _, row in class_df.iterrows()}
 metadata_dict = load_metadata_to_dict()
@@ -93,10 +113,13 @@ quick_dict = {frame: Node("base_frame", frame) for frame in base_frames}
 for type_name, items in metadata_dict.items():
     for item in items:
         name = item.get('name')
+        variants = item.get('variants', [])
         reqs = item.get('required', [])
+
         classification = class_map.get((type_name, name), "Universal")
 
-        item_node = Node(type_name, name, classification)
+        variant = random.choice(variants) if variants else ''
+        item_node = Node(type_name, name, classification, variant)
         for req in reqs:
             if req in quick_dict:
                 quick_dict[req].nodes.append(item_node)
@@ -104,6 +127,6 @@ for type_name, items in metadata_dict.items():
 
 # --- Example Usage ---
 print("--- Randomized Enemy (Non-Humanoid) ---")
-enemy = generate_sprite("male", mode="Non-Humanoid")
-for item in enemy:
-    print(item)
+items = generate_sprite("male", mode="Non-Humanoid")
+url = create_url(quick_dict.get("male"), items)
+print(url)
