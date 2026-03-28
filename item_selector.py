@@ -2,16 +2,17 @@ import random
 import pandas as pd
 import json
 
-SPRITE_GEN_URL = "http://localhost:8000"
+SPRITE_GEN_URL = "http://localhost:8000" # Start service with `python -m http.server 8000`
 # SPRITE_GEN_URL = "https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/"
 
 # 1. Update Node Model to include classification
 class Node:
-    def __init__(self, type_name, name, classification="Universal", variant=''):
+    def __init__(self, type_name, name, classification="Universal", variants=[]):
         self.type_name = type_name
         self.name = name
         self.classification = classification
-        self.variant = variant
+        self.variant_list = variants
+        self.variant = ''
         self.nodes = []
 
     def __repr__(self):
@@ -58,17 +59,15 @@ def load_metadata_to_dict():
   return type_to_objects
 
 
-# 3. The Generator Function
-def generate_sprite(base_frame, mode="Humanoid"):
-    """
-    mode: "Humanoid" or "Non-Humanoid"
-    """
-    root = quick_dict.get(base_frame)
-    if not root: return "Invalid base frame"
+def generate_sprite(base_frame, mode, seed=None):
+    rng = random.Random(seed)   # isolated deterministic RNG
 
-    # Pool items by category and classification
-    # 'Universal' items are always included in the pool
+    root = quick_dict.get(base_frame)
+    if not root:
+        return "Invalid base frame"
+
     allowed_classes = [mode, "Universal"]
+
     pool = {}
     for node in root.nodes:
         if node.classification in allowed_classes:
@@ -76,21 +75,24 @@ def generate_sprite(base_frame, mode="Humanoid"):
 
     selected_items = []
 
-    # Guardrail 1: Mandatory Categories
+    # Mandatory categories
     mandatory = ['body', 'head', 'hair', 'torso', 'legs']
     for cat in mandatory:
         if cat in pool:
-            selected_items.append(random.choice(pool[cat]))
+            item = rng.choice(pool[cat])
+            item.variant = rng.choice(item.variant_list) if item.variant_list else ''
+            selected_items.append(item)
 
-    # Guardrail 2: Optional Items (2 to 5)
-    # Filter out categories already used in mandatory
+    # Optional items
     remaining_cats = [c for c in pool.keys() if c not in mandatory]
-    num_optional = random.randint(2, 5)
 
-    # Randomly pick unique categories for optional items
-    extra_cats = random.sample(remaining_cats, min(len(remaining_cats), num_optional))
+    num_optional = rng.randint(2, 5)
+    extra_cats = rng.sample(remaining_cats, min(len(remaining_cats), num_optional))
+
     for cat in extra_cats:
-        selected_items.append(random.choice(pool[cat]))
+        item = rng.choice(pool[cat])
+        item.variant = rng.choice(item.variant_list) if item.variant_list else ''
+        selected_items.append(item)
 
     return selected_items
 
@@ -98,8 +100,7 @@ def generate_sprite(base_frame, mode="Humanoid"):
 def create_url(base_frame, items):
     url_param = [item.url_param_format() for item in items]
     url_params = "&".join(url_param)
-
-    return SPRITE_GEN_URL + '#sex=' + base_frame.name + '&' + url_params
+    return SPRITE_GEN_URL + '#sex=' + base_frame + '&' + url_params
 
 
 class_df = pd.read_csv('classified_items.csv')
@@ -118,15 +119,15 @@ for type_name, items in metadata_dict.items():
 
         classification = class_map.get((type_name, name), "Universal")
 
-        variant = random.choice(variants) if variants else ''
-        item_node = Node(type_name, name, classification, variant)
+        item_node = Node(type_name, name, classification, variants)
         for req in reqs:
             if req in quick_dict:
                 quick_dict[req].nodes.append(item_node)
 
+base_frame = "male"
+mode = "Non-Humanoid"
+seed = 100
 
-# --- Example Usage ---
-print("--- Randomized Enemy (Non-Humanoid) ---")
-items = generate_sprite("male", mode="Non-Humanoid")
-url = create_url(quick_dict.get("male"), items)
+items = generate_sprite(base_frame, mode, seed)
+url = create_url(base_frame, items)
 print(url)
