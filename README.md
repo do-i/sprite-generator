@@ -23,6 +23,7 @@ source .venv/bin/activate
 
 pip install -e .
 
+export PLAYWRIGHT_BROWSERS_PATH=.playwright
 playwright install chromium
 ```
 
