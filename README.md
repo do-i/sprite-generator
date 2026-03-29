@@ -31,13 +31,24 @@ playwright install chromium
 
 ## Project Structure
 
+ tree
 .
-├── item_selector.py
-├── playwright_wrapper.py
-├── classified_items.csv
-├── item-metadata.json
+├── generated_spritesheets
+│   ├── male_Non-Humanoid_1.png
+│   ├── male_Non-Humanoid_2.png
+│   └── male_Non-Humanoid_2.png
 ├── pyproject.toml
-└── README.md
+├── README.md
+└── src
+    │  
+    └── spriter
+        ├── __init__.py
+        ├── __main__.py
+        ├── config.json
+        ├── classified_items.csv
+        ├── item-metadata.json
+        ├── item_selector.py
+        └── playwright_wrapper.py
 
 ---
 
@@ -57,59 +68,11 @@ https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generato
 
 ### 2. Generate sprite URL
 
-```python
-from item_selector import generate_sprite, create_url, quick_dict
+```sh
 
-seed = 42
+python -m spriter
 
-items = generate_sprite(
-    base_frame="male",
-    mode="Humanoid",
-    seed=seed
-)
-
-url = create_url(quick_dict["male"], items)
-
-print(url)
 ```
-
-Same seed → same sprite.
-
----
-
-### 3. Render spritesheet PNG automatically
-
-```bash
-python playwright_wrapper.py
-```
-
-Outputs:
-
-generated_spritesheets/<name>.png
-
----
-
-## Deterministic Generation
-
-Controlled by seed:
-
-| component | deterministic |
-|----------|--------------|
-| mandatory categories | yes |
-| optional category count | yes |
-| optional category selection | yes |
-| item selection | yes |
-| variant selection | yes |
-| final URL | yes |
-
-Example:
-
-```python
-for seed in range(5):
-    items = generate_sprite("female", seed=seed)
-```
-
----
 
 ## Configuration
 
@@ -127,14 +90,3 @@ teen
 Humanoid
 Non-Humanoid
 Universal
-
----
-
-## Roadmap ideas
-
-- CLI interface
-- batch dataset generation
-- sprite preview grid
-- rarity weighting
-- multi-agent outfit constraints
-- SVG export pipeline
