@@ -1,0 +1,36 @@
+[project]
+name = "sprite-generator"
+version = "0.1.0"
+description = "Procedural sprite generator using LPC character generator with deterministic seed control."
+authors = [
+  { name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "pandas>=2.0",
+  "playwright>=1.40"
+]
+
+[project.optional-dependencies]
+dev = [
+  "ipython",
+  "black",
+  "ruff"
+]
+
+[project.scripts]
+generate-sprite = "item_selector:generate_sprite"
+render-sprite = "playwright_wrapper:generate_character"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+select = ["E","F","I"]

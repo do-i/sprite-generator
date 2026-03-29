@@ -100,7 +100,7 @@ def generate_sprite(base_frame, mode, seed=None):
 def create_url(base_frame, items):
     url_param = [item.url_param_format() for item in items]
     url_params = "&".join(url_param)
-    return SPRITE_GEN_URL + '#sex=' + base_frame + '&' + url_params
+    return SPRITE_GEN_URL + '/#?' + url_params + '&sex=' + base_frame
 
 
 class_df = pd.read_csv('classified_items.csv')
