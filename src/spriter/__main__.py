@@ -1,31 +1,32 @@
+import json
+from pathlib import Path
 from spriter.item_selector import Generator
 from spriter.playwright_wrapper import SpriteDownloader
-from pathlib import Path
 
 PARENT_DIR = Path(__file__).parent
-SPRITE_GEN_URL = "http://mima:8000"
+
+def load_config(config_path):
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+
+    # Convert relative strings to absolute Path objects
+    config["metadata_path"] = PARENT_DIR / config["metadata_path"]
+    config["classification_path"] = PARENT_DIR / config["classification_path"]
+    return config
 
 def main():
-    config = {
-        "metadata_path": PARENT_DIR / "item-metadata.json",
-        "classification_path": PARENT_DIR / "classified_items.csv",
-        "sprite_gen_url": SPRITE_GEN_URL
-    }
-
+    config = load_config(PARENT_DIR / "config.json")
     generator = Generator(config)
 
-    with SpriteDownloader(SPRITE_GEN_URL) as downloader:
-        for seed in range(1,50):
-            sprite_url = generator.generate_sprite_url(
-                base_frame="male",
-                mode="Non-Humanoid",
-                seed=seed,
-            )
+    with SpriteDownloader(config["sprite_gen_url"]) as downloader:
+        base_frame = config["base_frame"]
+        mode = config["mode"]
+        mode_mod = mode.replace(" ","-")
 
-            downloader.download_sprite(
-                sprite_url,
-                filename=f"sprite_{seed}.png"
-            )
+        for seed in range(config["range_start"], config["range_end"]):
+            sprite_url = generator.generate_sprite_url(base_frame, mode, seed)
+            output_file_prefix = f"{base_frame}_{mode_mod}_{seed}.png"
+            downloader.download_sprite(sprite_url, output_file_prefix)
 
 if __name__ == "__main__":
     main()

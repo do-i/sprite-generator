@@ -1,0 +1,9 @@
+{
+    "metadata_path": "item-metadata.json",
+    "classification_path": "classified_items.csv",
+    "sprite_gen_url": "http://mima:8000",
+    "range_start": 1,
+    "range_end": 5,
+    "base_frame": "male",
+    "mode": "Non-Humanoid"
+}
