@@ -31,7 +31,7 @@ playwright install chromium
 
 ## Project Structure
 
- tree
+```sh
 .
 ├── generated_spritesheets
 │   ├── male_Non-Humanoid_1.png
@@ -49,7 +49,7 @@ playwright install chromium
         ├── item-metadata.json
         ├── item_selector.py
         └── playwright_wrapper.py
-
+```
 ---
 
 ## Usage

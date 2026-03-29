@@ -3,7 +3,7 @@
     "classification_path": "classified_items.csv",
     "sprite_gen_url": "http://mima:8000",
     "range_start": 1,
-    "range_end": 5,
+    "range_end": 51,
     "base_frame": "male",
     "mode": "Non-Humanoid"
 }
