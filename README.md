@@ -90,3 +90,9 @@ teen
 Humanoid
 Non-Humanoid
 Universal
+
+### 3. Trim sprite tiles
+
+```sh
+./scripts/crop_tiles.bash
+```
